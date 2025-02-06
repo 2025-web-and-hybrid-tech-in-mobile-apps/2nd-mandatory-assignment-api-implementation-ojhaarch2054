@@ -1,0 +1,39 @@
+
+
+###
+GET http://localhost:3000/high-scores?level=5
+
+
+### signup
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "userHandle": "testUser4",
+  "password": "testPassword4"
+}
+
+### login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "userHandle": "testUser4",
+  "password": "testPassword4"
+}
+
+
+###get rqst for login
+GET http://localhost:3000/login
+
+### post highscore Rqst
+POST http://localhost:3000/high-scores
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySGFuZGxlIjoidGVzdFVzZXI0IiwiaWF0IjoxNzM4NzU5NTQxLCJleHAiOjE3MzkwMTg3NDF9.rcufPQZcjkS6qqcmWsKXaKSFwVKvY5hmgiHDXgLotVU
+
+{
+  "level": "5",
+  "userHandle": "testUser5",
+  "score": 10000,
+  "timestamp": "2023-10-10T10:00:00Z"
+}

@@ -351,6 +351,8 @@ describe("Testing hiscores", function () {
     await chai
       .request(apiAddress)
       .get("/high-scores")
+
+      
       .query({ level: "A1" })
       .then((response) => {
         expect(response.status).to.equal(200);
